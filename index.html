@@ -1,1 +1,140 @@
-<h1>Hello World</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paul Déchorgnat - Personal Website</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="main-title">
+            Paul Déchorgnat
+        </div>
+        <div class="sub-title">
+            Hi there ! This is my personal website where I talk about some interests of mine.
+            <br>
+            <a href="https://github.com/pauldechorgnat">Github</a> <a href="https://wwww.linkedin.com/in/paul-dechorgnat">Linkedin</a>
+
+        </div>
+        <div class="menu">
+            <div class="menu-title">
+                Menu
+            </div>
+            <ul>
+                <li><a href="#interests">Current Interests</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li>Libraries</li>
+                <li>Reading</li>
+            </ul>
+        </div>
+        <div id="interests" class="menu">
+            <div class="menu-title">
+                Current Interests
+            </div>
+            <div class="menu-subtitle">
+                Mathematics
+            </div>
+            <div class="menu-text">
+                My focus is mainly on Graph Theory and Bayesian Statistics.
+                <div class="menu-container">
+                    <div class="menu-container-left">
+                        Graph Theory: <br>
+                        I am currently studying Marc Barthélemy's book <a href="https://link.springer.com/book/10.1007/978-3-030-94106-2"><i>Spatial Networks</i></a>. Spatial Networks are Graphs for which points are located into an Euclidean Space. Distance between nodes can be computed in two ways (in a straight line or by hopping from node to node).
+                        <br>
+                        I am also trying to create a <a href="https://pypi.org/pypi/spatial-networks">Python library</a> to deal with these spatial networks.The source code can be found <a href="https://github.com/pauldechorgnat/spatial-networks">here</a>.
+                    </div>
+                    <div class="menu-container-right">
+                        <img src="images/demo_random_graph.png" alt="Example of a Spatial Network image" class="menu-image">
+                    </div>
+                </div>
+                <div class="menu-container">
+                    <div class="menu-container-left">
+                        Bayesian Statistics:<br>
+                        Per my training, I am mostly familiar with frequentist statistics (at least somewhat familiar). But after hearing so much good about Bayesian Statistics, Bayesian models, simulations, (...) I've decided to take a look a it.
+                        I am reading <a href="https://www.bayesrulesbook.com/">Bayes Rules Book</a>. I am also converting R examples from this book to <a href="">Python code</a>. 
+                    </div>
+                    <div class="menu-container-right">
+                        <!-- <img src="images/book_cover.jpeg" alt="Cover of Bayes Rules" class="menu-image"> -->
+                    </div>
+                </div>
+
+                
+
+            </div>
+
+        </div>
+
+
+</body>
+
+</html>
+
+<style>
+    .container {
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-top: 5rem;
+    }
+    
+    body {
+        font-family: monospace;
+    }
+    
+    .main-title {
+        font-size: 3rem;
+    }
+    
+    .sub-title {
+        color: grey;
+        margin-bottom: 2rem;
+    }
+    
+    .menu-title {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .menu-subtitle {
+        font-size: 1.2rem;
+        color: gray;
+        padding-left: 2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .menu-text {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .menu-container {
+        display: flex;
+        margin-top: 1rem
+    }
+    
+    .menu-container-left {
+        width: 80%;
+    }
+    .menu-container-right {
+        width: 20%;
+        padding: auto;
+    }
+    
+    a {
+        color: black
+    }
+
+    .menu-image {
+        max-height: 10rem;
+        padding: auto!important;
+     
+    }
+    
+    /* #interests {
+        margin-top: 100rem;
+    }*/
+</style>
