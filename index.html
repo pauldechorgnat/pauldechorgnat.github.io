@@ -5,353 +5,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paul Déchorgnat - Personal Website</title>
+    <title>Paul Déchorgnat</title>
+    <link rel="stylesheet" href="/my_style.css">
 </head>
 
+
+
 <body>
-    <div class="container">
-        <div class="main-title">
-            Paul Déchorgnat
-        </div>
-        <div class="sub-title">
-            Hi there ! This is my personal website where I talk about some interests of mine. I do not know exactly where this is going but I'll try to update it frequently. Oh and it's ugly on purpose :)
-            <br>
-            <a href="https://github.com/pauldechorgnat">Github</a> <a href="https://wwww.linkedin.com/in/paul-dechorgnat">Linkedin</a>
-
-        </div>
-        <div class="menu">
-            <div class="menu-title">
-                Menu
-            </div>
-            <ul>
-                <li><a href="#whoami">WhoAmI</a></li>
-                <li><a href="#interests">Current Interests</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#reading">Readings</a></li>
-                <li><a href="#websites">Websites</a></li>
-                <li><a href="#repos">Repos</a></li>
-                <li><a href="#tools">Tools</a></li>
-            </ul>
-        </div>
-        <div class="menu" id="whoami">
-            <div class="menu-title">Who Am I?</div>
-            <div class="menu-text">
-                My name is Paul Déchorgnat. I am a 28 years old French Engineer trained at École Centrale Paris (currently CentraleSupélec). I have worked for <a href="https://datascientest.com/">DataScientest.com</a> for 4 years as a Data Scientist/Data Engineer. I have a degree in Applied Mathematics and a specialization in Data Science. I am not the biggest fan of Machine Learning but I really enjoy what can be done with data. I especially enjoy working with graphs which are, for me, ones of the most elegant objects in mathematics.
-            </div>
-        </div>
-        <div id="interests" class="menu">
-            <div class="menu-title">
-                Current Interests
-            </div>
-            <div class="menu-subtitle">
-                Mathematics
-            </div>
-            <div class="menu-text">
-                My focus is mainly on Graph Theory and Bayesian Statistics.
-                <div class="menu-container">
-                    <div class="menu-container-left">
-                        Graph Theory: <br> I am currently studying Marc Barthélemy's book <a href="https://link.springer.com/book/10.1007/978-3-030-94106-2"><i>Spatial Networks</i></a>. Spatial Networks are Graphs for which points are located into an
-                        Euclidean Space. Distance between nodes can be computed in two ways (in a straight line or by hopping from node to node).
-                        <br> I am also trying to create a <a href="https://pypi.org/pypi/spatial-networks">Python library</a> to deal with these spatial networks.The source code can be found <a href="https://github.com/pauldechorgnat/spatial-networks">here</a>.
-                    </div>
-                    <div class="menu-container-right">
-                        <img src="images/demo_random_graph.png" alt="Example of a Spatial Network image" class="menu-image">
-                    </div>
-                </div>
-                <div class="menu-container">
-                    <div class="menu-container-left">
-                        Bayesian Statistics:<br> Per my training, I am mostly familiar with frequentist statistics (at least somewhat familiar). But after hearing so much good about Bayesian Statistics, Bayesian models, simulations, (...) I've decided
-                        to take a look a it. I am reading <a href="https://www.bayesrulesbook.com/">Bayes Rules Book</a>. I am also converting R examples from this book to <a href="">Python code</a>.
-                    </div>
-                    <div class="menu-container-right">
-                        <!-- <img src="images/book_cover.jpeg" alt="Cover of Bayes Rules" class="menu-image"> -->
-                    </div>
-                </div>
-            </div>
-            <div class="menu-subtitle">
-                Chess
-            </div>
-            <div class="menu-text">
-                I have been very interested in chess for some years. Currently trying to play a bit less to let place to other interests. Currently 2000 elo on Lichess in every category but I haven't played on Lichess for months. Oscillating between 1650 and 1800 on
-                chess.com.
-                <br> Playing mainly:
-                <ul>
-                    <li>The Scott</li>
-                    <li>The Advanced French</li>
-                    <li>The Sicilian (dragon)</li>
-                </ul>
-                I'll try to learn more openings in the future.
-            </div>
-            <div class="menu-subtitle">
-                History
-            </div>
-            <div class="menu-text">
-                I have always been a fan of history (and even wanted to be an historian when younger). I do not have any particular tropism towards any period. I listen to a lot of conference by french historians (Johann Chapoutot, Christian Ingrao, Nicolas Patin, Michel
-                Pastoureau, ...) and other institutions (Collège de France, École des Chartes, ...) and recently discovered a wonderful set of podcasts: <a href="https://passionmedievistes.fr/">Passion Médiéviste</a> (I am currently making
-                my way through Middle Age episodes).
-            </div>
-            <div class="menu-subtitle">
-                Politics, Anthropology, Sociology
-            </div>
-            <div class="menu-text">
-                This is one of my main interest: trying to understand how our societies work, alone or together in order to understand political levers (means of action). It links a bit the other interests: Mathematics for measuring or simulating effects, Anthropology
-                and History to understand how things were to become the way they are today, Sociology to get the base concepts for simulation, Politics for action possibility. In that way, I find Emmanuel's Todd work very interesting, mixing all of this
-                together to get something that, at least, seems very accurate.
-            </div>
-        </div>
-        <div class="menu" id="reading">
-            <div class="menu-title">
-                Readings
-            </div>
-            <div class="menu-subtitle">
-                Currently reading
-            </div>
-            <div class="menu-text">
-                I am currently reading multiple books, shifting from one to another:
-                <ul>
-                    <li><i>Le 18 Brumaire de Louis Bonaparte</i>, Karl Marx</li>
-                    <li><i>Les luttes de classe en France au XXIe siècle</i>, Emmanuel Todd</li>
-                    <li><i>Une histoire symbolique du Moyen Âge occidental</i>, Michel Pastoureau</li>
+    <div id="navbar">
+        <div class="navbar-container container">
+            <a href="/" class="home-link">
+                <img class="navbar-logo" src="/images/logo.png"> Paul Déchorgnat
+            </a>
+            <button type="button" id="navbar-toggle" aria-controls="navbar-menu" aria-label="Toggle menu" aria-expanded="false">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+            <div id="navbar-menu" aria-labelledby="navbar-toggle">
+                <ul class="navbar-links">
+                    <li class="navbar-item"><a class="navbar-link" href="/index.html">About</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="/posts/main.html">Blog</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="https://github.com/pauldechorgnat">Github</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="/contact.html">Contact</a></li>
                 </ul>
             </div>
-            <div class="menu-subtitle">
-                Recently read
-            </div>
-            <div class="menu-text">
-                I might publish some notes later on those books:<br><br> Non fiction (2022):
-                <ul>
-                    <li><i>La démocratie disciplinée par la dette</i>, Benjamin Lemoine</li>
-                    <li><i>Nécessaire Souveraineté</i>, Coralie Delaume</li>
-                    <li><i>Djihadisme Européen</i>, Hugo Micheron</li>
-                    <li><i>Les nouveaux chiens de garde</i>, Serge Halimi</li>
-                    <li><i>Feuillets d'usine</i>, Joseph Ponthus</li>
-                    <li><i>Et les Blancs sont partis</i>, Arthur Frayet-Laleix</li>
-                    <li><i>Comment s'occuper un dimanche d'élection</i>, François Bégaudeau</li>
-                    <li><i>Races et histoire</i>, Claude Lévy-Strauss</li>
-                    <li><i>Libres d'obéir</i>, Johann Chapoutot</li>
-                    <li><i>Notre joie</i>, François Bégeaudeau</li>
-                </ul>
-                Fiction (2022)
-                <ul>
-                    <li><i>14 Juillet</i>, Éric Vuillard</li>
-                    <li><i>L'ordre du jour</i>, Éric Vuillard</li>
-                    <li><i>Une sortie honorable</i>, Éric Vuillard</li>
-                    <li><i>La guerre des pauvres</i>, Éric Vuillard</li>
-                </ul>
-            </div>
-            <div class="menu-subtitle">
-                Reading pile
-            </div>
-            <div class="menu-text">
-                This one is too high and too depressing to note.
-            </div>
         </div>
-        <div class="menu" id="websites">
-
-            <div class="menu-title">
-                Websites
-            </div>
-            <div class="menu-text">
-                I have created several websites over the years. Most of them are not very good but they exist. I have used Heroku for most of them. So here they are ! (I'll try to find the time to link the source codes too)
-            </div>
-            <div class="menu-subtitle">
-                Blindfold Chess
-            </div>
-            <div class="menu-text">
-                This website was created for me to learn how to play chess with a blindfold. I never really used it but I am quite pleased with how it turned out. We find all the exercises that are generally offered to learn blindfolded chess. I hope it will be used here by someone: <a href="https://blind-fold-chess.herokuapp.com/">BlindFoldChess</a>.
-            </div>
-            <div class="menu-subtitle">
-                CodeName
-            </div>
-            <div class="menu-text">
-                <i>CodeName</i> is another board game that I used to play with friends. During lockdown, I had the idea of creating my own online multiplayer version of the game. It was also an interesting way to learn about web sockets. It is available <a href="https://codename-paul.herokuapp.com/">here</a>.
-            </div>
-            <div class="menu-subtitle">
-                When I Dream
-            </div>
-            <div class="menu-text">
-                <i>When I Dream</i> is a board game that I used to play with friends where people must make a player guess cards based on one word clues. I tried to create a website to emulate the game and replace the cars and hourglass. It is also my first experience with the creation of a website with NodeJS. It is available <a href="https://whenidream.herokuapp.com/">here</a>.
-            </div>
-            <div class="menu-subtitle">
-                Wine App
-            </div>
-            <div class="menu-text">
-                Some context: my parents are huge wine lovers. For Christmas 2018, I created a set of cards for my mother so that she could learn about wines, grape types, ... At the same time I was going through the amazing <a href="https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world">Mega Flask tutorial</a>. So I tried to make my own website using Flask because a website is easier to carry than a set of cards. This gave <a href="https://desolate-brushlands-35398.herokuapp.com/">this Wine App website</a>. It is utterly broken but I'll try to fix it some times soon.
-            </div>
-        </div>
-        <div class="menu" id="repos">
-            <div class="menu-title">
-                Repositories
-            </div>
-            <div class="menu-text">
-                I have a lot of repositories on my Github account. Here I'll try to explain some of them.
-            </div>
-            <div class="menu-subtitle">
-                <a href="https://github.com/pauldechorgnat/spatial-networks">Spatial Networks</a>
-            </div>
-            <div class="menu-text">
-                This repository contains my work on the library Spatial Networks. This library is used to manipulate Graph that are located in space. It is both an occasion to play with spatial graphs but also an opportunity to learn how to develop a Python library. You can see how this library works by going to <a href="https://github.com/pauldechorgnat/spatial-networks/blob/master/notebooks/02_basic_graphs.ipynb">this notebook</a>.
-            </div>
-            <div class="menu-subtitle">
-                <a href="https://github.com/pauldechorgnat/mortality">Mortality</a>
-            </div>
-            <div class="menu-text">
-                A quick repo to build GIFs based on mortality rates in France.
-            </div>
-            <div class="menu-subtitle">
-                <a href="https://github.com/pauldechorgnat/datatelier-twitter">Datatelier Twitter</a>
-                
-            </div>
-            <div class="menu-text">
-                This repository is a repository that I used for support for a workshop I made on using Twitter data. (The name comes from the contraction of Data and Atelier (Workshop in French)). A Youtube recording of the workshop (in French) is available <a href="https://www.youtube.com/watch?v=0qoDhxDN3ls">here</a>.
-            </div>
-            <div class="menu-subtitle">
-                <a href="https://github.com/pauldechorgnat/data-chomage">Data Chomage</a>
-            </div>
-            <div class="menu-text">
-                A simple cleaning of data relative to the unemployment rate in France at a low granularity.
-            </div>
-            <div class="menu-subtitle">
-                <a href="https://github.com/pauldechorgnat/allocations">Allocations</a>
-            </div>
-            <div class="menu-text">
-                A simple cleaning of data relative to different allowances in France. There is still a lot to do on this data.
-            </div>
-            <div class="menu-subtitle">
-                <a href="https://github.com/pauldechorgnat/ising-model">Ising Model</a>
-            </div>
-            <div class="menu-text">
-                A small study on the Ising Model (a Statistical Physics model) that can be applied to socio-economic problems too. Still a Work In Progress though.
-            </div>
-            <div class="menu-subtitle">
-                <a href="https://github.com/pauldechorgnat/projet-datascience">Projet Data Science</a>
-            </div>
-            <div class="menu-text">
-                A small repository dedicated to the study of a e-commerce website data. This repo was used for educational purposes but might be a bit outdated.
-            </div>
-            <div class="menu-subtitle">...</div>
-        </div>
-        <div class="menu" id="tools">
-            <div class="menu-title">
-                Tools, Languages and other
-            </div>
-            <div class="menu-text">
-                Given my work as an instructor, I have learnt to use a lot of different tools.
-            </div>
-            <div class="menu-subtitle">
-                Programming Languages
-            </div>
-            <div class="menu-text">
-                Python (main language), HTML, CSS, JavaScript, SQL, R<br>
-                Python libraries in particular: numpy, pandas, matplotlib, seaborn, keras, networkx, shapely, geopandas, fastapi, flask, boto3, airflow, dash
-            </div>
-            <div class="menu-subtitle">
-                Dev tools
-            </div>
-            <div class="menu-text">
-                Developing: Git, Github (including Github Actions), VSCode, Jupyter Lab <br>
-                Managing: Docker, Kubernetes, Airflow, Serverless<br>
-                Monitoring: Datadog, Sentry
-
-            </div>
-            <div class="menu-subtitle">
-                Cloud
-            </div>
-            <div class="menu-text">
-                Azure: I am a certified Data Engineer for Azure (DP203)<br>
-                AWS: AWS has been an everyday tool for me for 4 years (EC2, S3, DynamoDB, Lambda, IAM, ...)
-            </div>
-            <div class="menu-subtitle">
-                Other
-            </div>
-            <div class="menu-text">
-                Obsidian (note taking): I am trying to apply <a href="https://www.amazon.fr/How-Take-Smart-Notes-Nonfiction/dp/1542866502">this book</a> techniques. I am currently building a knowledge graph of notes about all my interests. I might publish some part of it in the future.
-            </div>
-        </div>
-
     </div>
-
+    <div class="html-content">
+        <h1>Hello World</h1><blockquote>
+<p>Hi there ! This is my personal website where I talk about some interests of mine. I do not know exactly where this is going but I'll try to update it frequently. Oh and it's ugly on purpose :)</p>
+</blockquote><h2>Who am I ?</h2><p>My name is Paul Déchorgnat. I am a 28 years old French Engineer trained at École Centrale Paris (currently CentraleSupélec). I have worked for <a href="https://datascientest.com/">DataScientest.com</a> for 4 years as a Data Scientist/Data Engineer. I have a degree in Applied Mathematics and a specialization in Data Science. I am not the biggest fan of Machine Learning but I really enjoy what can be done with data. I especially enjoy working with graphs which are, for me, ones of the most elegant objects in mathematics.</p><h2>Interests</h2><p>My main current interests are:</p><ul>
+<li>Mathematics</li>
+<li>Chess</li>
+<li>History</li>
+<li>Politics, Sociology, Anthropology</li>
+</ul><p>I've added details <a href="/posts/interests.html">here</a></p><h2>Reading</h2><p>I am currently reading multiple books and I take notes on these books. I might publish some notes on the book. You can find the list of books I read this year <a href="/posts/readings.html">here</a>.</p><h2>Repositories and websites</h2><p>I have created multiple websites that are described <a href="/posts/websites.html">here</a>. I also have nearly 50 repositories on <a href="https://github.com/pauldechorgnat">Github</a>. I have described some of the interesting ones <a href="/posts/repos.html">here</a>.</p><h2>Tools</h2><p><a href="/posts/tools.html">Here</a>, I describe the different tools that I use.</p>
     </div>
-
-
 </body>
 
 </html>
 
-<style>
-    .container {
-        margin-left: 20%;
-        margin-right: 20%;
-        margin-top: 5rem;
-    }
-    
-    body {
-        font-family: monospace;
-        text-align: justify;
-    }
-    
-    a {
-        color: black
-    }
-    
-    .main-title {
-        font-size: 3rem;
-        margin-bottom: 1rem;
-    }
-    
-    .sub-title {
-        color: grey!important;
-        margin-bottom: 2rem;
-    }
-    
-    .menu-title {
-        font-size: 1.5rem;
-        margin-bottom: 1rem;
-        margin-top: 5rem
-    }
-    
-    .menu-subtitle {
-        font-size: 1.2rem;
-        color: gray;
-        padding-left: 2rem;
-        margin-bottom: 1rem;
-        margin-top: 1rem
-    }
-    
-    .menu-text {
-        padding-left: 2rem;
-        padding-right: 2rem;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-    }
-    
-    .menu-container {
-        display: flex;
-        margin-top: 1rem
-    }
-    
-    .menu-container-left {
-        width: 80%;
-    }
-    
-    .menu-container-right {
-        width: 20%;
-        padding: auto;
-    }
-    
-    .menu-image {
-        max-height: 10rem;
-        padding: auto!important;
-    }
-    /* #interests {
-        margin-top: 100rem;
-    }*/
-</style>
-
 <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
-<script>
-    function addDarkmodeWidget() {
-        new Darkmode().showWidget();
-    }
-    window.addEventListener('load', addDarkmodeWidget);
-</script>
+<script src="/code.js"></script>
