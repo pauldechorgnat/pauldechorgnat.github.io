@@ -7,8 +7,16 @@ I am currently reading multiple books and I take notes on these books. I might p
 - _La Commune et les Communards_, Jacques Rougerie
 - _Ceux qui restent_, Benoît Coquard
 
+## Read in 2023
+
+- _Le mage du Kremlin_, Giuliano da Empoli
+
 ## Read in 2022
 
+- _La guerre des mots_, Selime Derkaoui et Nicolas Framont
+- _Fouloscopie_, Medhi Moussaïd
+- _Je vous écris du front de la somme_, François Ruffin
+- _Servir les riches_, Alizée Delpierre
 - _La démocratie disciplinée par la dette_, Benjamin Lemoine
 - _Nécessaire Souveraineté_, Coralie Delaume
 - _Djihadisme Européen_, Hugo Micheron
