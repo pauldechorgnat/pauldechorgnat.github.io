@@ -5,11 +5,27 @@ I am currently reading multiple books and I take notes on these books. I might p
 ## Currently reading
 
 - _La Commune et les Communards_, Jacques Rougerie
-- _Ceux qui restent_, Benoît Coquard
 
 ## Read in 2023
 
 - _Le mage du Kremlin_, Giuliano da Empoli
+- _Ceux qui restent_, Benoît Coquard
+- _Le meilleur des mondes_, Aldous Huxley
+- _Nous_, Evgueni Zamiatine
+- _Boniments_, François Bégaudeau
+- _La ménagerie de papier_, Ken Liu
+- _La France contre les robots_, Georges Bernanos
+- _Le grand enfumage_, Hervé Le Bras
+- _Celui qui chuchote dans les ténèbres_, H.P. Lovecraft
+- _Légendes du mythe de Cthulhu_, H.P. Lovecraft et al
+- _L'horreur de Dunwhich_, H.P. Lovecraft
+- _Révolution_, (Tome 1, Tome 2 livre 1), Grouazel Locard
+- _Capital et idéologie_, Claire Alet et Benjamin Adam
+- _Quai d'Orsay_ (Tome 1, Tome 2), Blain & Lanzac
+- _Le chat du rabbin_, (Tome 1, Tome 2, Tome 3), Johann Sfar
+- _Les damnés de la Commune_, (Tome 1), Raphaël Meyssan
+- _Maus_, Art Spiegelman
+- _L'arabe du futur_, (Tomes 1 à 6) Riad Satouf
 
 ## Read in 2022
 
